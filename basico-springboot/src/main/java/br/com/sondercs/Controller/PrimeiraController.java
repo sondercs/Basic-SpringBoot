@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,12 +23,15 @@ public class PrimeiraController {
         //Para o CodeSpaces: https://vigilant-space-sniffle-4xvgprj59w4fqw5j-8080.app.github.dev/primeiraController/primeiroMetodo/(Número)
     }
 
+    
     @GetMapping("metodoComQueryParams")
     public String metodoComQueryParms(@RequestParam String id){
         return "O paramétro com query params é "+id;
         //http://localhost:8080/primeiraController/metodoComQueryParams?id=123
         //Para o CodeSpaces: https://vigilant-space-sniffle-4xvgprj59w4fqw5j-8080.app.github.dev/primeiraController/metodoComQueryParams?id=123
     }
+
+
     @GetMapping("/metodoComQueryParams2")
     public String metodoComQueryParms2(@RequestParam Map<String, String> allParms){
         return "O paramétro com query params é "+ allParms.entrySet();
@@ -35,6 +39,8 @@ public class PrimeiraController {
         //Para o CodeSpaces: https://vigilant-space-sniffle-4xvgprj59w4fqw5j-8080.app.github.dev/primeiraController/metodoComQueryParams2?id=123&nome=joao&idade=35
 
     }
+
+
     // Ultilizar uma API REST, no caso eu usei o API DOG pra estudar esse tipo de Parms
     @PostMapping("/metodoComBodyParms") 
     public String metodoComBodyParms(@RequestBody Usuario usuario){
@@ -46,6 +52,22 @@ public class PrimeiraController {
         *  }
          */
 
+    }
+
+
+    // Ultilizar uma API REST, no caso eu usei o API DOG pra estudar esse tipo de Parms
+    @PostMapping("/metodoComHeaders") 
+    public String metodoComHeaders(@RequestHeader("name")String name ){
+        return "Método com Headers " + name;
+    //localhost:8080/primeiraController/metodoComHeaders
+    }
+
+
+    // Ultilizar uma API REST, no caso eu usei o API DOG pra estudar esse tipo de Parms
+    @PostMapping("/metodoComListHeaders") 
+    public String metodoComListHeaders(@RequestHeader Map<String, String> headers ){
+        return "Método com Headers " + headers.entrySet();
+        //localhost:8080/primeiraController/metodoComListHeaders
     }
 
     record Usuario(String username){} // O record é ultilizado quando queremos informações mais simples sem precisar ficar usando GETTERS e SETTERS.
