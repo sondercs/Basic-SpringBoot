@@ -70,6 +70,18 @@ public class PrimeiraController {
         //localhost:8080/primeiraController/metodoComListHeaders
     }
 
+    // Ultilizar uma API REST, no caso eu usei o API DOG pra estudar esse tipo de Resposta
+    @GetMapping("/metodoResponseEntity/{id}")
+    public ResponseEntity<Object> metodoResponseEntity(@PathVariable long id){// Diversdas opções passar um objeto
+        var usuario = new Usuario("sondercs");
+        if (id > 5) {
+            return ResponseEntity.status(HttpStatus.CREATED).body(usuario);
+        }
+        return ResponseEntity.badRequest().body("Número menor que 5");
+        
+        //localhost:8080/primeiraController/metodoResponseEntity
+    }
+
     record Usuario(String username){} // O record é ultilizado quando queremos informações mais simples sem precisar ficar usando GETTERS e SETTERS.
 
 }
