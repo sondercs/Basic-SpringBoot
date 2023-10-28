@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,4 +35,19 @@ public class PrimeiraController {
         //Para o CodeSpaces: https://vigilant-space-sniffle-4xvgprj59w4fqw5j-8080.app.github.dev/primeiraController/metodoComQueryParams2?id=123&nome=joao&idade=35
 
     }
+    // Ultilizar uma API REST, no caso eu usei o API DOG pra estudar esse tipo de Parms
+    @PostMapping("/metodoComBodyParms") 
+    public String metodoComBodyParms(@RequestBody Usuario usuario){
+        return "Método POST " + usuario.username;
+        //No APIDOG: localhost:8080/primeiraController/metodoComBodyParms
+        /*
+         * {
+            "username": "Joao"
+        *  }
+         */
+
+    }
+
+    record Usuario(String username){} // O record é ultilizado quando queremos informações mais simples sem precisar ficar usando GETTERS e SETTERS.
+
 }
