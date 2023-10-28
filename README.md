@@ -17,8 +17,8 @@ Este projeto é um modelo básico de aplicação Spring Boot que inclui configur
 
 Para executar este projeto, você precisará do seguinte:
 
-- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) - Versão X ou superior
-- [Maven](https://maven.apache.org/download.cgi) - Versão X ou superior
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) - Versão 17 ou superior
+- [Maven](https://maven.apache.org/download.cgi) - Versão 3.9.5 ou superior
 
 ## Configuração
 
