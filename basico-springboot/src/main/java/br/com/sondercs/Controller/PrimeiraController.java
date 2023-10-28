@@ -1,4 +1,4 @@
-package br.com.sondercs.basicospringboot;
+package br.com.sondercs.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
