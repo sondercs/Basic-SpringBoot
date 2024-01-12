@@ -1,36 +1,38 @@
 # Spring Boot Basic Template
 
-Este é um projeto Spring Boot simples, que serve como um ponto de partida para o desenvolvimento de aplicativos com Spring Boot.
+This is a simple Spring Boot project that serves as a starting point for developing applications with Spring Boot.
 
-## Índice
+## Table of Contents
 
-- [Sobre](#sobre)
-- [Requisitos](#requisitos)
-- [Configuração](#configuração)
-- [Executando o Projeto](#executando-o-projeto)
+- [About](#about)
+- [Requirements](#requirements)
+- [Configuration](#configuration)
+- [Running the Project](#running-the-project)
 
-## Sobre
+## About
 
-Este projeto é um modelo básico de aplicação Spring Boot que inclui configurações iniciais e uma estrutura mínima para começar a desenvolver. Use-o como base para criar suas próprias aplicações Spring Boot.
+This project is a basic Spring Boot application template that includes initial configurations and a minimal structure to kickstart development. Use it as a foundation for building your own Spring Boot applications.
 
-## Requisitos
+## Requirements
 
-Para executar este projeto, você precisará do seguinte:
+To run this project, you will need the following:
 
-- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) - Versão 17 ou superior
-- [Maven](https://maven.apache.org/download.cgi) - Versão 3.9.5 ou superior
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) - Version 17 or higher
+- [Maven](https://maven.apache.org/download.cgi) - Version 3.9.5 or higher
 
-## Configuração
+## Configuration
 
-Você pode personalizar a configuração do projeto de acordo com suas necessidades. Certifique-se de verificar e atualizar as configurações no arquivo `application.properties` ou `application.yml`.
+You can customize the project configuration according to your needs. Make sure to check and update the settings in the `application.properties` or `application.yml` file.
 
-## Executando o Projeto
+## Running the Project
 
-Siga as etapas abaixo para executar o projeto localmente:
+Follow the steps below to run the project locally:
 
-1. Clone este repositório:
+1. Clone this repository:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto-spring-boot.git
-   cd seu-projeto-spring-boot
+   git clone https://github.com/your-username/your-spring-boot-project.git
+   cd your-spring-boot-project
    ```
+   
+   <!-- Other steps for running the Spring Boot application can be added here as needed. -->
