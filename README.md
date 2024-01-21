@@ -31,7 +31,7 @@ Follow the steps below to run the project locally:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-spring-boot-project.git
+   git clone https://github.com/sondercs/your-spring-boot-project.git
    cd your-spring-boot-project
    ```
    
